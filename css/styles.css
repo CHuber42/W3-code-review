@@ -1,13 +1,11 @@
-html, body {
-  height: 99%;
-  
+html {
+  height: 100%;
 }
 
 body {
+  height: 100%;
   font-family: 'IM Fell French Canon SC', serif;
   background-image: url("../img/marble.png");
-  background-repeat: repeat;
-  background-attachment: fixed;
 }
 
 label {
@@ -16,20 +14,26 @@ label {
   text-align: center;
   width: 100%;
   font-size: x-large;
+  
 }
 
 select {
   margin: auto;
-  margin-top: 2%;
+  margin-top: 1%;
   font-size: large;
   font-family: 'IM Fell French Canon SC', serif;
+  box-shadow: 3px 4px gray;
+  margin-bottom: 1%;
+  margin-left: 1%;
 }
 
 .btn {
   background-color: white;
   float: right;
   font-size: large;
-  margin-top: 1.5%;
+  margin-top: .2%;
+  margin-right: 2%;
+  box-shadow: 3px 4px gray;
 }
 
 #publishingBox {
@@ -39,9 +43,25 @@ select {
   background-color: white;
   border-radius: 30px;
   font-weight: 800;
-  animation: mymove 5s infinite;
+  
+  box-shadow: 5px 10px gray;
 }
 
-@keyframes mymove {
-  50% {box-shadow: 10px 20px 30px blue;}
+form {
+  margin-top: 2%;
+  border: 1px solid black;
+  box-shadow: 5px 10px gray;
+  border-radius: 10px;
 }
+
+.container{
+  border: 1px solid blue;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+body {
+  border: 1px solid green;
+  height: 100%;
+}
+
