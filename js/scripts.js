@@ -1,8 +1,11 @@
-function transform(numberInputAsInt) {
+function transform(numberInputAsInt, mode) {
   var resultsArray = []
 
   for (i = 0; i <= numberInputAsInt; i++){
     resultsArray.push(i);
+  }
+  if (mode === "reverse") {
+    resultsArray.reverse();
   }
   
   for (i = 0; i < resultsArray.length; i++) {
@@ -33,7 +36,9 @@ $(document).ready(function() {
   $("form#inputForm").submit(function(event) {
     event.preventDefault();
     var userInput = parseInt($("#input").val());
-    var pendingResults = transform(userInput);
+    var runMode = $("#mode").val();
+  
+    var pendingResults = transform(userInput, runMode);
     $("#publishingBox").text("");
     for (i = 0; i < pendingResults.length; i++){
       $("#publishingBox").append(pendingResults[i] + "<br>");

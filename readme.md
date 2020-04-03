@@ -31,6 +31,13 @@ dependencies are bundled; simply open index.html in your browser.
 **Spec #11: clear the results box/div/whatever in case old results are present** |  N/A
 **Spec #12: loop over results array, publishing to page** |  Input:["Condition 1 flag", "Condition 2 flag", "Condition 3 flag", "4", "5"] | Output: "Beep!" "Boop!" "Won't you be my Neighbor?"
 
+STRETCH SPECS
+
+**Spec #13: add forward mode/reverse mode select box** |  
+**Spec #14: pass forward mode/reverse mode value** | 
+**Spec #14: if mode is reverse, reverse the unpacked array after construction** | input: 5, reverse | output: [5, 4, 3, 2, 1, 0] | input 5, normal | [5, 4, 3, 2, 1, 0]
+
+
          
 
 
