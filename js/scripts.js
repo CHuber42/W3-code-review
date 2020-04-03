@@ -22,19 +22,16 @@ function transform(numberInputAsInt) {
           flagResult = "three";
           break;
         default:
-          if (flagFilter === ""){                   //Don't set the "non-"1""2""3"" flag unless "1""2""3" flag has not been set
+          if (flagResult === ""){                   //Don't set the "non-"1""2""3"" flag unless "1""2""3" flag has not been set
             flagResult = range[i].toString();
           }
           break;
       }
 
     }
-
-
-
-
-  
-    }
+    range[i] = flagResult;  
+  }
+  console.log(range)
 
   
 
