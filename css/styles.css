@@ -5,7 +5,6 @@ html {
 body {
   height: 100%;
   font-family: 'IM Fell French Canon SC', serif;
-  background-image: url("../img/marble.png");
   overflow-x: hidden;
 }
 
@@ -62,14 +61,27 @@ form {
   min-height: 100%;
 }
 
-body {
-  border: 1px solid green;
-  height: 100%;
-}
+
+/***************************************
+On the advice of Daniel I'm pasting this here:
+I've made multiple attempts to contact teachers regarding the ethics of this, but haven't gotten a response.
+SO. DISCLAIMER:
+
+I 100% copy/pasted the code from
+https://css-tricks.com/books/fundamental-css-tactics/infinite-scrolling-background-image/
+
+to make the scrolling background work. I did this in order to "visualize" the behavior between the classes, keyframes(which I'm still learning about)
+and CSS. It took well over an hour of experimentation and exploration to get the behavior I wanted.
+
+Regardless of my time investment to investigate/understand/adopt/implement, the "base model" for this behavior was completely copy/pasted 
+and I'm worried that skirts the border of academic dishonesty. So I wanted to be very certain - and very clear - I am doing my best
+to make sure that's not happening.
+
+Thank you.
+ **************************************/
 
 
-
-.sliding-background {
+.sliding-left {
   background: url("../img/marble.png");
   min-height: 100%;
   width: 5076px;
