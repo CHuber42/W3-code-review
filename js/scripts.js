@@ -1,33 +1,31 @@
 function transform(numberInputAsInt) {
-  var range = []
+  var resultsArray = []
 
   for (i = 0; i <= numberInputAsInt; i++){
-    range.push(i);
+    resultsArray.push(i);
   }
   
-  for (i = 0; i < range.length; i++) {
-    var temparray = (range[i]).toString().split("");   //convert an entry to string and split it (for more-than-1-digit numbers)
+  for (i = 0; i < resultsArray.length; i++) {
+    var temparray = (resultsArray[i]).toString().split("");   //convert an entry to string and split it (for more-than-1-digit numbers)
     temparray.sort();                                  //sort the components lowest-to-highest (51 becomes "1" "5")
-                                       //holds this index's post-int-check result ("one", "two", "three", or range[i]; ex: "459")
+                                       //holds this index's post-int-check result ("one", "two", "three", or resultsArray[i]; ex: "459")
 
-    for (j = 0; j < temparray.length; j++) {         //loop/switch to perform the above and set the flag ("one", "two", "three", or range[i]; ex: "459")
+    for (j = 0; j < temparray.length; j++) {         //loop/switch to perform the above and set the flag ("one", "two", "three", or resultsArray[i]; ex: "459")
       switch (temparray[j]) {
         case "1":
-          range[i] = "Beep!";
+          resultsArray[i] = "Beep!";
           break
         case "2":
-          range[i] = "Boop!";
+          resultsArray[i] = "Boop!";
           break;
         case "3":
-          range[i] = "Won't you be my neighbor?";
+          resultsArray[i] = "Won't you be my neighbor?";
           break;
       }
-
     }
-     
   }
   
-console.log(range)
+console.log(resultsArray)
   
 
 }
