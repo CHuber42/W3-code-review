@@ -40,6 +40,9 @@ STRETCH SPECS
 **Spec #16: add name input box, collect user name in variable, pass to back end** | 
 **Spec #15: set "digit '3' exists" output to "won't you be my neighbor?" if no name, else "won't you be my neighbor, [name]?** | input: Dana | output: 3's = Won't you be my neighbor, Dana? ||| input: [none] | output: 3's = "Won't you be my neighbor?" 
 
+**Spec #17: Special CSS styles/animations: scrolling background** |
+**Spec #18: Rainbow-scrolling Submit Button** |  
+
 
 
          
