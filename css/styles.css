@@ -14,7 +14,7 @@ label {
   text-align: center;
   width: 100%;
   font-size: x-large;
-  
+  animation: chromatic 2s infinite;
 }
 
 select {
@@ -34,7 +34,7 @@ select {
   margin-top: .2%;
   margin-right: 2%;
   box-shadow: 3px 4px gray;
-  animation: rainbow 1s infinite;
+  animation: chromatic 2s infinite;
 }
 
 #publishingBox {
@@ -44,15 +44,15 @@ select {
   background-color: white;
   border-radius: 30px;
   font-weight: 800;
-  box-shadow: 5px 10px gray;
+  box-shadow: 3px 6px gray;
   margin-bottom: .5%;
 }
 
 form {
   margin-left: 7%;
-  margin-top: 0px;
-  border: 1px solid black;
-  box-shadow: 5px 10px gray;
+  margin-top: .5%;
+  
+
   border-radius: 10px;
   width: 23%;
   min-height: 100%;
@@ -83,7 +83,7 @@ Thank you.
 
 
 .sliding-left {
-  background: url("../img/marble.png");
+  background: url("../img/swan.jpg");
   min-height: 100%;
   width: 5076px;
   animation: slide-left 60s linear infinite;
@@ -112,14 +112,14 @@ Thank you.
   }
 }
 
-@keyframes rainbow {
+@keyframes chromatic {
   0% { 
-    color:goldenrod;
+    color:rgb(243, 208, 118);
   }
   50% {
-    color: black;
+    color: rgb(202, 194, 194);
    }
   100% {
-    color: goldenrod;
+    color: rgb(243, 208, 118);
   }
 }

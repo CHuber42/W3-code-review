@@ -1,9 +1,9 @@
-### Project: **Week 2 Code Review - Programming Language Suggestor**
-#### Author: **Christopher Huber** & **Chisato Murakami*
+### Project: **Week 3 Code Review - Mr. Roboger's Neighborhood**
+#### Author: **Christopher Huber**
 
 ### Github page: 
 #### Github repo: You're standing on it.
-##### Copyright Christopher Huber, Chisato Murakami 2020
+##### Copyright Christopher Huber, 2020
 
 &nbsp;
      
@@ -42,14 +42,6 @@ STRETCH SPECS
 
 **Spec #17: Special CSS styles/animations: scrolling background** |
 **Spec #18: Rainbow-scrolling Submit Button** |  
-
-
-
-         
-
-
-
-
 
 ##### _Contact_:
 
