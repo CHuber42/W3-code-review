@@ -24,10 +24,7 @@ function transform(numberInputAsInt) {
       }
     }
   }
-  
-console.log(resultsArray)
-  
-
+  return resultsArray;
 }
 
 
@@ -37,6 +34,9 @@ $(document).ready(function() {
     event.preventDefault();
     var userInput = parseInt($("#input").val());
     var pendingResults = transform(userInput);
+    for (i = 0; i < pendingResults.length; i++){
+      $("#publishingBox").append(pendingResults[i] + "<br>");
+    }
 
   
   
