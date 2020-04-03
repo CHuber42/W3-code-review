@@ -35,7 +35,11 @@ STRETCH SPECS
 
 **Spec #13: add forward mode/reverse mode select box** |  
 **Spec #14: pass forward mode/reverse mode value** | 
-**Spec #14: if mode is reverse, reverse the unpacked array after construction** | input: 5, reverse | output: [5, 4, 3, 2, 1, 0] | input 5, normal | [5, 4, 3, 2, 1, 0]
+**Spec #15: if mode is reverse, reverse the unpacked array after construction** | input: 5, reverse | output: [5, 4, 3, 2, 1, 0] ||| input 5, normal | [5, 4, 3, 2, 1, 0]
+
+**Spec #16: add name input box, collect user name in variable, pass to back end** | 
+**Spec #15: set "digit '3' exists" output to "won't you be my neighbor?" if no name, else "won't you be my neighbor, [name]?** | input: Dana | output: 3's = Won't you be my neighbor, Dana? ||| input: [none] | output: 3's = "Won't you be my neighbor?" 
+
 
 
          

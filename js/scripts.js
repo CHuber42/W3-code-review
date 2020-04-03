@@ -1,5 +1,10 @@
-function transform(numberInputAsInt, mode) {
+function transform(numberInputAsInt, mode, aName) {
   var resultsArray = []
+  var conditionThree = "Won't you be my neighbor?";
+  if (aName !== ""){
+    conditionThree = `Won't you be my neighbor, ${aName}?`;
+  }
+
 
   for (i = 0; i <= numberInputAsInt; i++){
     resultsArray.push(i);
@@ -22,7 +27,7 @@ function transform(numberInputAsInt, mode) {
           resultsArray[i] = "Boop!";
           break;
         case "3":
-          resultsArray[i] = "Won't you be my neighbor?";
+          resultsArray[i] = conditionThree;
           break;
       }
     }
@@ -37,8 +42,9 @@ $(document).ready(function() {
     event.preventDefault();
     var userInput = parseInt($("#input").val());
     var runMode = $("#mode").val();
+    var userName = $("#name").val();
   
-    var pendingResults = transform(userInput, runMode);
+    var pendingResults = transform(userInput, runMode, userName);
     $("#publishingBox").text("");
     for (i = 0; i < pendingResults.length; i++){
       $("#publishingBox").append(pendingResults[i] + "<br>");
