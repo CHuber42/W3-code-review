@@ -34,6 +34,7 @@ $(document).ready(function() {
     event.preventDefault();
     var userInput = parseInt($("#input").val());
     var pendingResults = transform(userInput);
+    $("#publishingBox").text("");
     for (i = 0; i < pendingResults.length; i++){
       $("#publishingBox").append(pendingResults[i] + "<br>");
     }
