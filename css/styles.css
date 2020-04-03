@@ -1,11 +1,13 @@
 html, body {
   height: 99%;
+  
 }
 
 body {
   font-family: 'IM Fell French Canon SC', serif;
-  background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0695/4768/rcalcutta_marble_grey__shop_preview.png");
+  background-image: url("../img/marble.png");
   background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 label {
@@ -16,6 +18,30 @@ label {
   font-size: x-large;
 }
 
-button {
+select {
+  margin: auto;
+  margin-top: 2%;
+  font-size: large;
+  font-family: 'IM Fell French Canon SC', serif;
+}
+
+.btn {
+  background-color: white;
   float: right;
+  font-size: large;
+  margin-top: 1.5%;
+}
+
+#publishingBox {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  background-color: white;
+  border-radius: 30px;
+  font-weight: 800;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {box-shadow: 10px 20px 30px blue;}
 }
