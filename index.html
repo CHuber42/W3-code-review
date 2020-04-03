@@ -8,29 +8,32 @@
     <title>Mr. Roboger's Neighborhood</title>    
   </head>
   <body>
-    <div class="container">
-      <div class="sliding-background"> 
-        <form id="inputForm">
+    <div class="container sliding-background">
+      
+        <form id="inputForm" class="sliding-right">
+        
           <label for="input">Would you like to tell me your name?</label>
           <input id="name" type="int" class="form-control">
 
           <label for="input">Either way, please enter a number, and decide if you'd like results in their normal or reverse order:</label>
           <input id="input" type="int" class="form-control">
           
-  
+
           <select id="mode">
             <option value="normal">Normal Mode</option>
             <option value="reverse">Reverse Mode</option>
           </select>
 
           <button type="submit" class="btn">Submit</button>
-          
-        </form>
 
+          
         <div id="publishingBox" class="well">
 
         </div>
-      </div>
+          
+        </form>
+
+      
     </div>
   </body>
 </html> 
